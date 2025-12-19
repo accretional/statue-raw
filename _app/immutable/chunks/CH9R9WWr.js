@@ -1,0 +1,1 @@
+async function i(e){if(!(await fetch("https://staging-waitlist-873306079214.us-central1.run.app",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:e.email,name:e.name||"",source:e.source||""})})).ok)throw new Error("Failed to join waitlist")}export{i as a};
